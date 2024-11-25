@@ -5,8 +5,15 @@ const password = document.getElementById('password')
 const cPassword = document.getElementById('confirm-password')
 
 form.addEventListener('submit', (e)=> {
+
     e.preventDefault()
+    
     validateInputs();
+    username.value = ''
+    password.value = ''
+    cPassword.value = ''
+    email.value = ''
+
 })
 
 const validateInputs = () => {
