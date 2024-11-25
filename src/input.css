@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.error span{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.success input{
+       border: 1.5px solid green;
+       border-radius: 3px;
+}
