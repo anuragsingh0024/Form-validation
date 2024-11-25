@@ -42,8 +42,10 @@ const validateInputs = () => {
             setSuccess(password)
            }
 
-          
-          if(cPasswordValue != passwordValue){
+          if(cPasswordValue===''){
+            setError(cPassword, "Password must be required")
+          }
+        else  if(cPasswordValue != passwordValue){
               setError(cPassword, "Password does'nt match")
           }
           else {
@@ -70,8 +72,8 @@ const setSuccess = (element)=> {
 }
 
 const  isValidEmail = (email) => {
-    const validateEmail = (email) => {
+   
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
-    };
+
 }
